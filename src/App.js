@@ -34,7 +34,7 @@ class App extends Component {
         icon: icons[index],
       });
     });
-    const hello = () => <h1>hello world</h1>;
+    const hello = () => <h1>Welcome to Test E-commerce Website</h1>;
     return (
       <BrowserRouter>
         <div className="App">
