@@ -63,9 +63,11 @@ const cartReducer = (state = initialState, action) => {
       let items = state.items;
       let html = "";
       items.map((item) => {
-        html += `[${item.title.slice(0, 15)}...] - (${item.qty}x${
-          item.price
-        } - $${item.totalPrice}) <br/>`;
+        return () => {
+          html += `[${item.title.slice(0, 15)}...] - (${item.qty}x${
+            item.price
+          } - $${item.totalPrice}) <br/>`;
+        };
       });
       Swal.fire({
         icon: "success",

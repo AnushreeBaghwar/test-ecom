@@ -66,7 +66,6 @@ const CartList = ({ carts, total }) => {
           <Button
             variant="contained"
             color="warning"
-            success
             onClick={handlePlaceOrder}
           >
             Place Order
