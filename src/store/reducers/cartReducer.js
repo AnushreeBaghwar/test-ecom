@@ -72,7 +72,7 @@ const cartReducer = (state = initialState, action) => {
       Swal.fire({
         icon: "success",
         title: "Order placed!",
-        html,
+        text: html,
         footer: "<h5>Order total: $" + state.totalPrice + "</h5>",
       });
 
